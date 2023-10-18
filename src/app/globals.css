@@ -1,3 +1,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --ff: Agrandir, helvetica;
+    --ff-wide: Agrandir-WideLight, helvetica;
+    --ff-blck-italic: Agrandir-BlackItalic, helvetica;
+    --ff-grand-light: Agrandir-GrandLight, helvetica;
+  }
+
+  @font-face {
+    font-family: var(--ff);
+    src: url('./pages/font/local/Agrandir-Regular.otf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: var(--ff-wide) !important;
+    src: url('./pages/font/local/Agrandir-WideLight.otf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    font-stretch: expanded;
+  }
+  @font-face {
+    font-family: var(--ff-blck-italic) !important;
+    src: url('./pages/font/local/Agrandir-WideBlackItalic.otf');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+    font-stretch: extra-expanded;
+  }
+  @font-face {
+    font-family: var(--ff-grand-light) !important;
+    src: url('./pages/font/local/Agrandir-GrandLight.otf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    font-stretch: extra-expanded;
+  }
+
+  body { font-family: var(--ff); font-display: optional }
+
+  .expanded {
+    font-weight: 800 !important;
+    font-stretch: extra-expanded !important;
+    font-family: var(--ff-grand-light) !important;
+  }
+}

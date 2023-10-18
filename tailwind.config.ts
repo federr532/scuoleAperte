@@ -15,7 +15,9 @@ const config: Config = {
       },
     },
     fontFamily: {
-      'Inter': ['Inter, sans-serif'],
+      'Agrandir': ['Agrandir-Regular', 'helvetica'],
+      'Expanded': ['Agrandir-WideLight', 'helvetica'],
+      'GrandHeavy': ['Agrandir-GrandHeavy', 'helvetica']
     }
   },
   plugins: [],
