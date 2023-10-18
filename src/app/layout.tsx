@@ -1,5 +1,8 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import 'bootstrap-icons/font/bootstrap-icons.css'
+import Footer from './components/Footer'
+
 
 export const metadata: Metadata = {
   title: 'Scuole aperte',
@@ -16,6 +19,7 @@ export default function RootLayout({
   return (
     <html lang="it" vocab="http://schema.org/" prefix="ov: http://open.vocab.org/terms/">
       <body className='font-Agrandir'>{children}</body>
+      <Footer />
     </html>
   )
 }
