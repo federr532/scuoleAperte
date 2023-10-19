@@ -1,7 +1,7 @@
 // import Image from 'next/image'
 // import Nav from './components/Header';
 import Image from "next/image";
-import logo from "../../public/LogoIsisBem.png";
+import logo from "../../public/LogoIsisBem.webp";
 import img1 from "../../public/logo-eu.svg";
 import img2 from "../../public/logo-repubblica.svg";
 
@@ -132,6 +132,7 @@ export default function Home() {
                 width={250}
                 height={250}
                 alt="logo Isis bem"
+                fetchPriority="low"
               />
             </div>
             <div className="flex w-1/2 justify-center items-center sm:justify-end sm:items-end">
@@ -140,6 +141,7 @@ export default function Home() {
                 width={100}
                 height={100}
                 alt="logo Isis bem"
+                fetchPriority="low"
               />
             </div>
           </div>

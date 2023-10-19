@@ -12,6 +12,9 @@
 /.next/
 /out/
 
+# fonts extra
+/src/app/font/local/Personal-license-agreement
+
 # production
 /build
 
