@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="it" vocab="http://schema.org/" prefix="ov: http://open.vocab.org/terms/">
-      <body className='font-Agrandir'>{children}</body>
+      <body className='font-Agrandir overflow-x-hidden'>{children}</body>
       <Footer />
     </html>
   )

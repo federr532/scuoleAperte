@@ -20,6 +20,7 @@ export default function Home() {
             alt="logo Isis bem"
             className="mx-auto max-w-[300px] max-h-[300px]"
             fetchPriority="high"
+            loading="eager"
           />
         </div>
         <h1 className="text-center text-4xl sm:text-5xl expanded mt-4">
@@ -73,6 +74,47 @@ export default function Home() {
             </div>
           </div>
         </div>
+        {/* 
+          scroller 
+        */}
+        <div className="w-full inline-flex justify-center items-center p-0 overflow-x-hidden mt-16 mx-0 flex-nowrap">
+          <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+            <li>
+              <Image
+                src={img1}
+                alt="Image"
+                width={300}
+                height={300}
+              />
+            </li>
+            <li>
+              <Image
+                src={img2}
+                alt="Image"
+                width={100}
+                height={100}
+              />
+            </li>
+          </ul>
+          <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
+            <li>
+              <Image
+                src={img1}
+                alt="Image"
+                width={300}
+                height={300}
+              />
+            </li>
+            <li>
+              <Image
+                src={img2}
+                alt="Image"
+                width={100}
+                height={100}
+              />
+            </li>
+          </ul>
+      </div>
         <h1 className="text-center text-4xl sm:text-5xl expanded mt-32">
           Informazioni
         </h1>
@@ -124,7 +166,7 @@ export default function Home() {
           </div>
           <div className="w-fit">CF: 91035220317</div>
         </div>
-        <div className="container mx-auto mt-0 mb-16">
+        {/* <div className="container mx-auto mt-0 mb-16">
           <div className="flex flex-col gap-8 sm:flex-row max-w-[500px] mx-auto justify-center items-center">
             <div className="flex w-1/2 flex-col sm:flex-row justify-center items-center">
               <Image
@@ -145,7 +187,7 @@ export default function Home() {
               />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </main>
   );
