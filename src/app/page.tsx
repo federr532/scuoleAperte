@@ -7,7 +7,7 @@ import img2 from "../../public/logo-repubblica.svg";
 
 export default function Home() {
   return (
-    <main className="h-full w-full flex flex-col justify-between font-Agrandir">
+    <main className="h-full w-full flex flex-col justify-between mt-12 font-Agrandir">
       <div className="container mx-auto">
         {/* 
           <Nav />
