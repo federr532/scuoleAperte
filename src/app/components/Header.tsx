@@ -8,7 +8,7 @@ export default function Header() {
       <ul className="flex gap-6 flex-wrap">
         <li className="mx-2"><Link href="/">Home</Link></li>
         {/* <li className="mx-2"><Link href="/Contatti">Contatti</Link></li> */}
-        <li className="mx-2"><a href="https://instagram.com/" target="blank"><i className="bi bi-instagram"></i></a></li>
+        <li className="mx-2"><a href="https://instagram.com/brignolieinaudimarconi" target="blank"><i className="bi bi-instagram"></i></a></li>
       </ul>
     </nav>
   )
