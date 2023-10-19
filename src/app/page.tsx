@@ -15,10 +15,11 @@ export default function Home() {
         <div className="container mx-auto w-full">
           <Image
             src={logo}
-            width={500}
-            height={200}
+            width={225}
+            height={225}
             alt="logo Isis bem"
-            className="mx-auto max-w-[450px] max-h-[450px]"
+            className="mx-auto max-w-[300px] max-h-[300px]"
+            fetchPriority="high"
           />
         </div>
         <h1 className="text-center text-4xl sm:text-5xl expanded mt-4">
