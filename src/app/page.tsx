@@ -1,5 +1,3 @@
-// import Image from 'next/image'
-// import Nav from './components/Header';
 import Image from "next/image";
 import logo from "../../public/LogoIsisBem.webp";
 import img1 from "../../public/logo-eu.svg";
@@ -7,11 +5,8 @@ import img2 from "../../public/logo-repubblica.svg";
 
 export default function Home() {
   return (
-    <main className="h-full w-full flex flex-col justify-between mt-12 font-Agrandir">
+    <div className="h-full w-full flex flex-col justify-between mt-12 font-Agrandir">
       <div className="container mx-auto">
-        {/* 
-          <Nav />
-         */}
         <div className="container mx-auto w-full">
           <Image
             src={logo}
@@ -27,7 +22,6 @@ export default function Home() {
           Scuole Aperte
         </h1>
         <div className="container mt-16 min-h-[410px] sm:min-h-[100px] mb-8 mx-auto">
-          {/* container: 2 under-container 50/50 */}
           <div className="flex flex-col sm:flex-row max-w-fit sm:max-w-[767px] mx-auto flex-wrap justify-center items-start w-full">
             <div className="w-full sm:w-1/2 flex items-center flex-col">
               <h1 className="expanded mb-4 w-[190px] text-lg sm:text-xl text-left text-green-500">
@@ -74,9 +68,16 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* 
-          scroller 
-        */}
+        <div className="container flex justify-center items-center mx-auto mt-20 mb-8">
+          <a 
+            href="https://bem.goiss.edu.it/pagine/scuola-aperta"
+            target="blank"
+            className="border linkOne flex justify-center items-center gap-2 border-gray-300 py-2 px-4 rounded-lg hover:bg-neutral-50 hover:underline hover:underline-offset-2"
+          >
+            Link scuole aperte 
+            <i className="bi bi-box-arrow-up-right"></i>
+          </a>
+        </div>
         <div className="w-full inline-flex justify-center items-center p-0 overflow-x-hidden mt-16 mx-0 flex-nowrap">
           <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
             <li>
@@ -166,29 +167,7 @@ export default function Home() {
           </div>
           <div className="w-fit">CF: 91035220317</div>
         </div>
-        {/* <div className="container mx-auto mt-0 mb-16">
-          <div className="flex flex-col gap-8 sm:flex-row max-w-[500px] mx-auto justify-center items-center">
-            <div className="flex w-1/2 flex-col sm:flex-row justify-center items-center">
-              <Image
-                src={img1}
-                width={250}
-                height={250}
-                alt="logo Isis bem"
-                fetchPriority="low"
-              />
-            </div>
-            <div className="flex w-1/2 justify-center items-center sm:justify-end sm:items-end">
-              <Image
-                src={img2}
-                width={100}
-                height={100}
-                alt="logo Isis bem"
-                fetchPriority="low"
-              />
-            </div>
-          </div>
-        </div> */}
       </div>
-    </main>
+    </div>
   );
 }

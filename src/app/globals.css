@@ -50,4 +50,7 @@
     font-stretch: extra-expanded !important;
     font-family: var(--ff-grand-light) !important;
   }
+
+  .linkOne, .linkOne>* { transition: all 200ms ease }
+  .linkOne:hover i { transform: translateY(-3px) }
 }
