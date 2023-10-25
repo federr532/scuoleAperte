@@ -5,7 +5,7 @@ import img2 from "../../public/logo-repubblica.svg";
 
 export default function Home() {
   return (
-    <div className="h-full w-full flex flex-col justify-between mt-12 font-Agrandir">
+    <div className="h-full w-full flex flex-col justify-between mt-0 sm:mt-12 font-Agrandir">
       <div className="container mx-auto">
         <div className="container mx-auto w-full">
           <Image
@@ -21,7 +21,7 @@ export default function Home() {
         <h1 className="text-center text-4xl sm:text-5xl expanded mt-4">
           Scuole Aperte
         </h1>
-        <div className="container mt-16 min-h-[410px] sm:min-h-[100px] mb-8 mx-auto">
+        <div className="container mt-12 sm:mt-16 min-h-[410px] sm:min-h-[100px] mb-0 sm:mb-8 mx-auto">
           <div className="flex flex-col sm:flex-row max-w-fit sm:max-w-[767px] mx-auto flex-wrap justify-center items-start w-full">
             <div className="w-full sm:w-1/2 flex items-center flex-col">
               <h1 className="expanded mb-4 w-[190px] text-lg sm:text-xl text-left text-green-500">
@@ -68,7 +68,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="container flex justify-center items-center mx-auto mt-20 mb-8">
+        <div className="container flex justify-center items-center mx-auto sm:mt-20 mb-10 sm:mb-16">
           <a 
             href="https://bem.goiss.edu.it/pagine/scuola-aperta"
             target="blank"
@@ -78,7 +78,10 @@ export default function Home() {
             <i className="bi bi-box-arrow-up-right"></i>
           </a>
         </div>
-        <div className="w-full inline-flex justify-center items-center p-0 overflow-x-hidden mt-16 mx-0 flex-nowrap">
+        <div 
+          className="w-full before:absolute before:left-0 before:shadow-xl before:w-[25px] before:h-[150px] before:bg-[rgba(255,255,255,0.1)]
+                    after:absolute after:right-0 after:shadow-xl after:w-[25px] after:h-[150px]
+                    inline-flex justify-center items-center p-0 overflow-x-hidden mt-16 mx-0 flex-nowrap">
           <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
             <li>
               <Image
@@ -116,10 +119,10 @@ export default function Home() {
             </li>
           </ul>
       </div>
-        <h1 className="text-center text-4xl sm:text-5xl expanded mt-32">
+        <h1 className="text-center text-4xl sm:text-5xl expanded mt-24 sm:mt-32">
           Informazioni
         </h1>
-        <div className="container max-w-fit mx-auto mt-12 mb-24">
+        <div className="container max-w-fit mx-auto mt-8 mb-24">
           <div
             className="w-fit"
             itemScope
