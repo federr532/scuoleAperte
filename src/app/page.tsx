@@ -79,9 +79,9 @@ export default function Home() {
           </a>
         </div>
         <div 
-          className="w-full before:absolute before:left-0 before:shadow-xl before:w-[25px] before:h-[150px] before:bg-[rgba(255,255,255,0.1)]
-                    after:absolute after:right-0 after:shadow-xl after:w-[25px] after:h-[150px]
-                    inline-flex justify-center items-center p-0 overflow-x-hidden mt-16 mx-0 flex-nowrap">
+          className="w-full inline-flex justify-center items-center p-0 overflow-x-hidden mt-16 mx-0 flex-nowrap
+                    before:absolute before:z-[999] before:left-0 before:w-[35px] before:h-[112px] before:bg-[rgba(255,255,255,0.1)]
+                    after:absolute after:z-[999] after:right-0 box-shad after:w-[35px] after:h-[112px] after:bg-[rgba(255,255,255,0.1)]">
           <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
             <li>
               <Image

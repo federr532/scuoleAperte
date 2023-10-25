@@ -53,4 +53,49 @@
 
   .linkOne, .linkOne>* { transition: all 200ms ease }
   .linkOne:hover i { transform: translateY(-3px) }
+
+  @media screen and (min-width: 200px) and (max-width: 767px) {
+    .box-shad::before {
+      background-image: linear-gradient(
+        90deg,
+        hsl(0deg 0% 86%) 0%,
+        hsl(60deg 1% 87%) 2%,
+        hsl(60deg 2% 88%) 4%,
+        hsl(60deg 3% 89%) 8%,
+        hsl(60deg 4% 90%) 12%,
+        hsl(60deg 6% 91%) 17%,
+        hsl(60deg 8% 92%) 23%,
+        hsl(60deg 10% 93%) 29%,
+        hsl(60deg 13% 94%) 37%,
+        hsl(60deg 18% 95%) 45%,
+        hsl(60deg 24% 96%) 53%,
+        hsl(60deg 35% 97%) 63%,
+        hsl(60deg 54% 98%) 76%,
+        hsl(60deg 100% 99%) 99%
+      );
+    }
+    .box-shad::after {
+      background-image: linear-gradient(
+        270deg,
+        hsl(0deg 0% 86%) 0%,
+        hsl(60deg 1% 87%) 2%,
+        hsl(60deg 2% 88%) 4%,
+        hsl(60deg 3% 89%) 8%,
+        hsl(60deg 4% 90%) 12%,
+        hsl(60deg 6% 91%) 17%,
+        hsl(60deg 8% 92%) 23%,
+        hsl(60deg 10% 93%) 29%,
+        hsl(60deg 13% 94%) 37%,
+        hsl(60deg 18% 95%) 45%,
+        hsl(60deg 24% 96%) 53%,
+        hsl(60deg 35% 97%) 63%,
+        hsl(60deg 54% 98%) 76%,
+        hsl(60deg 100% 99%) 99%
+      );
+    }
+  }
+  /* backdrop-filter: blur(20px);
+  border: 1px solid white;
+  mask: linear-gradient(90deg, transparent, black 50%);
+  -webkit-mask: linear-gradient(90deg, transparent, black 50%); */
 }
